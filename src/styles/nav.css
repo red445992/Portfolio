@@ -1,3 +1,75 @@
-body {
-    background-color: blue;
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    top: 3rem;
+    gap: 1.5625rem;
+    left: 20%;
+    transform: translateX(-50%); /* Always keep it centered */
+}
+
+.nav-about {
+    transform: translate(-1.5625rem);
+}
+
+.nav-skills {
+    transform: translate(-6.25rem);
+}
+
+.nav-projects {
+    transform: translate(-10.94rem);
+}
+
+.nav-contact {
+    transform: translate(-15.62rem);
+}
+
+a {
+    width: 3.123rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.page-title {
+    font-size: 0.875rem;
+    color: white;
+    cursor: default;
+}
+
+.nav-link {
+    opacity: 0.7;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link.current {
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        top: calc(110vh - 8rem);
+    }
+
+    /* Reset the transforms */
+    .nav a {
+        transform: none;
+    }
+
+    .nav-link {
+        width: 2rem;
+    }
+
+    .nav-link img {
+        width: 2rem;
+    }
+
+    .page-title {
+        display: none;
+    }
 }
