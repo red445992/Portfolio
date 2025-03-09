@@ -42,10 +42,8 @@ export default class AboutMenu extends Component {
         : careerIcon;
 
     // Ensure subheadingData is actually a function before calling it
-    const subheadings =
-      typeof subheadingData === "function"
-        ? subheadingData(activeMenuItem)
-        : [];
+    const subheadings = subheadingData[activeMenuItem] || [];
+
 
     return (
       <>
