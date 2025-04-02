@@ -1,0 +1,115 @@
+#playerStats {
+    max-width: 15rem;
+    min-width: 8rem;
+    width: 15rem;
+    height: 6rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 1rem;
+    right: 2rem;  /* Fixed to the right for desktops */
+    padding: 0.5rem;
+    border: 2px dotted #00ffcc;
+    box-shadow: 0 0 10px #00ffcc;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Optional: semi-transparent background */
+}
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white; /* Contrast with border */
+}
+
+h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffcc00; /* Different from border for contrast */
+}
+/* 🖥 Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    #playerStats {
+        right: 1rem;
+        width: 18%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+/* 💻 Medium Screens (Laptops, Tablets) */
+@media (max-width: 992px) {
+    #playerStats {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        max-width: 12rem;
+        padding: 0.4rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+}
+
+/* 📱 Small Screens (Phones) */
+@media (max-width: 768px) {
+    #playerStats {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        max-width: 10rem;
+        padding: 0.3rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+}
+
+/* 📲 Very Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+    #playerStats {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 9rem;
+        padding: 0.2rem;
+    }
+
+    h1 {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+    }
+}
+
+/* Styling for the separator line */
+#playerStats__lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playerStats_lines_thick {
+    display: block;
+    background-color: #00ffcc;
+    height: 0.2rem;
+    width: 100%;
+}
