@@ -52,3 +52,10 @@ button[type="submit"]:hover {
   margin-top: 10px;
   color: green;
 }
+
+@media (max-width: 600px) {
+  .contact-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}

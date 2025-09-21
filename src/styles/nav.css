@@ -73,3 +73,18 @@ a {
         display: none;
     }
 }
+
+@media (max-width: 600px) {
+    .nav {
+        top: calc(100vh - 6rem);
+        left: 50%;
+    }
+
+    .nav a {
+        width: 1.5rem;
+    }
+
+    .nav-link img {
+        width: 1.5rem;
+    }
+}

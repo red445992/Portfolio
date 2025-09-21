@@ -19,8 +19,8 @@ export default class skillsMenu extends Component {
               <img src={frontendIcon} alt="Frontend" className="skill-icon" />
             </div>
             <div className="content">
-              <h3>Frontend Development</h3>
-              <p>Currently learning and mastering modern web technologies</p>
+              <h3>Vibe Coder</h3>
+              <p>Just typing with rhythm and letting the code flow</p>
               <div className="progress-bar">
                 <div className="progress" style={{ width: '70%' }}></div>
               </div>
@@ -32,8 +32,8 @@ export default class skillsMenu extends Component {
               <img src={backendIcon} alt="Backend" className="skill-icon" />
             </div>
             <div className="content">
-              <h3>Backend Development</h3>
-              <p>Exploring server-side technologies and databases</p>
+              <h3>Digital Nomad Dev</h3>
+              <p>Wandering through code forests with coffee in hand.</p>
               <div className="progress-bar">
                 <div className="progress" style={{ width: '60%' }}></div>
               </div>
@@ -45,8 +45,8 @@ export default class skillsMenu extends Component {
               <div className="coming-soon">🚀</div>
             </div>
             <div className="content">
-              <h3>More Skills Coming Soon</h3>
-              <p>Stay tuned for updates on my learning journey</p>
+              <h3>More Vibes Loading...</h3>
+              <p>Cool stuff brewing in the background—stay tuned!</p>
               <div className="progress-bar">
                 <div className="progress" style={{ width: '30%' }}></div>
               </div>
